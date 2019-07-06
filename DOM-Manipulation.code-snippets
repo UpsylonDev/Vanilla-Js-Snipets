@@ -1,0 +1,64 @@
+{
+    "DOM-create": {
+        "scope": "javascript",
+        "prefix": "dcreate",
+        "body": [
+            "var $2  = document.createElement(\"$1\");",
+            "$2.setAttribute(\"$3\", \"$4\");",
+             "$0"
+        ],
+        "description": "DOM create Elmt"
+    },
+    "DOM-create+add": {
+        "scope": "javascript",
+        "prefix": "dcreate+add",
+        "body": [
+            "var $2  = document.createElement(\"$1\");",
+             "$2.setAttribute(\"$3\", \"$4\");",
+             "\t $5.appendChild($2);",
+             "$0"
+        ],
+        "description": "DOM create + add Elmt"
+    },
+    "DOM-create+add-before": {
+        "scope": "javascript",
+        "prefix": "dcreate+add+before",
+        "body": [
+            "var $2 = document.createElement(\"$1\");",
+             "\t $2.setAttribute(\"$3\", \"$4\");",
+             "\t $5.insertBefore($2, $5.childNodes[$6]);",
+              "$0"
+        ],
+        "description": "DOM Append Child before..."
+    },
+    "DOM-add-Child": {
+        "scope": "javascript",
+        "prefix": "daddChild",
+        "body": ["$1.appendChild($0);"],
+        "description": "DOM Append a Little Child !"
+    },
+    "DOM-add-before": {
+        "scope": "javascript",
+        "prefix": "daddCbefore",
+        "body": ["$0.appendChild(\"$1\");"],
+        "description": "Vanilla prepend Child !"
+    },
+    "DOM-remove-Child": {
+        "scope": "javascript",
+        "prefix": "dremoveChld",
+        "body": [
+          "$1.removeChild($1.childNodes[$2])",
+          "$0"
+        ],
+        "description": "DOM remove Child !"
+    },
+    "DOM-replace-Child": {
+        "scope": "javascript",
+        "prefix": "dreplaceChld",
+        "body": [
+          "$1.replacheChild( $3, $1.childNodes[$2])",
+          "$0"
+        ],
+        "description": "DOM replace Child !"
+    }
+}

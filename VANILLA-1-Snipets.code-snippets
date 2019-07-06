@@ -1,0 +1,89 @@
+{
+    "Vanilla-GetId": {
+        "scope": "javascript",
+        "prefix": "vgetid",
+        "body": [
+            "var $2 = document.getElementById(\"$1\")", "$0"
+        ],
+        "description": "Want This #ID !"
+    },
+    "Vanilla-GetClass": {
+        "scope": "javascript",
+        "prefix": "vgetclass",
+        "body": [
+            "var $3 = document.getElementsByClassName(\"$1\")[$2]", "$0"
+        ],
+        "description": "Want This CLASS !"
+    },
+    "Vanilla-GetTag": {
+        "scope": "javascript",
+        "prefix": "vgettag",
+        "body": [
+            "var $3 = document.getElementsByTagName(\"$1\")[$2]", "$0"
+        ],
+        "description": "Want this TAG !"
+    },
+    "Vanilla-GetAttribute": {
+        "scope": "javascript",
+        "prefix": "vgetattr",
+        "body": [
+            "var $3 = $2.getAttribute(\"$1\")", "$0"
+        ],
+        "description": "Want this Attribute !"
+    },
+    "Vanilla-GetText": {
+        "scope": "javascript",
+        "prefix": "vgettext",
+        "body": [
+            "$1.textContent", "$0"
+        ],
+        "description": "Want this Text !"
+    },
+    "Vanilla-event-Click": {
+        "scope": "javascript",
+        "prefix": "vaddclick",
+        "body": [
+            "$1.addEventListener('click', (e) => {", "\t$0", "})"
+        ],
+        "description": "Want Click ! "
+    },
+    "Vanilla-event-MouseOver": {
+        "scope": "javascript",
+        "prefix": "vmouseover",
+        "body": [
+            "$1.addEventListener('mouseover', (e) => {", "\t$0", "})"
+        ],
+        "description": "Vanilla mouseOver ! "
+    },
+    "Vanilla-event-MouseMove": {
+        "scope": "javascript",
+        "prefix": "vmousemove",
+        "body": [
+            "$1.addEventListener('mouseover', (e) => {", "\t$0", "})"
+        ],
+        "description": "Vanilla MouveMouse ! "
+    },
+    "Vanilla-add-Html": {
+        "scope": "javascript",
+        "prefix": "vadinner",
+        "body": ["$0.innerHTML = \" $1 \" "],
+        "description": "Vanilla inner...Please !  "
+    },
+    "Vanilla-QuerySlct": {
+        "scope": "javascript",
+        "prefix": "vselq",
+        "body": [
+            "document.querySelector(\"$1\");", "$0"
+        ],
+        "description": "Vanilla Query Selector !  "
+    },
+    "Vanilla-set": {
+        "scope": "javascript",
+        "prefix": "vsetattri",
+        "body": [
+            "setAttribute(\"$1\", \"$2\")",
+             "$0"
+        ],
+        "description": "Vanilla Set attibute !  "
+    }
+}
