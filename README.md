@@ -1,2 +1,2 @@
 # Vanilla-Js-Snipets
-My Snipets for manipulate faster the DOM with vanillaJs
+My VSC Snipets for manipulate faster the DOM with vanillaJs
